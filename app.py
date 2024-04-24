@@ -154,7 +154,17 @@ st.write(
 st.write("#")
 st.subheader("Projects")
 st.write("---")
-for project, link in PROJECTS.items():
-    st.write(f"🔗 [{project}]({link})")
 
-st.image(gif_path, caption='Quadrocopter doing a barrel roll', use_column_width='always')
+# Iterate over each project and display it with a GIF and link in two columns
+for i, (project, link) in enumerate(PROJECTS.items(), start=1):
+    col1, col2 = st.columns(2)  # Divide into two columns
+    with col1:
+        # Load and display the GIF for the project
+        st.image(gif_path, caption=f"{project} GIF", use_column_width='always')
+    with col2:
+        # Display the link for the project
+        st.markdown(f"🔗 [{project}]({link})")
+
+    # Add a horizontal rule between each project (except for the last one)
+    if i < len(PROJECTS):
+        st.write("---")
