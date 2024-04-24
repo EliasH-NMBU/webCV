@@ -9,6 +9,7 @@ css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV-3.pdf"
 grade_card = current_dir / "assets" / "grade_card.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
+gif_path = "assets/Barrel_roll.gif"
 
 
 
@@ -78,13 +79,53 @@ st.write(
     """
     - 🎓 MSc in Applied Robotics, Autonomous Systems and Control (📅 2019 - 2024)
     - 🎓 High School Vestby Videregående Skole, Science Division (📅 2015 - 2018)
+    """)
+st.write("🏢","**Robotics Engineer/Researcher | NMBU **")
+st.write("📅 05/2023 - Present")
+st.write(
+    """
+    - ►  
+    - ►
+    - ► 
+    """)
 
-    - 🏢 **Robotics Engineer/Researcher** at [NMBU](https://www.sintef.no/en/projects/2022/robofarmer-safe-and-reliable-sensing-learning-and-control-of-an-autonomous-multi-arm-agri-robot-platform/) (📅 2023 - Present)
-    - 🏢 **Teaching Assistant, TMP100** at [NMBU](https://www.nmbu.no/emne/TMP100) (📅 2022)
-    - 🏢 **Teaching Assistant, TIP100** at [NMBU](https://www.nmbu.no/emne/TMP100) (📅 2022- 2023)
-    - 🏢 **Project Manager and Researcher** at [NMBU](https://www.nmbu.no/fakulteter/fakultet-realfag-og-teknologi/eik-lab) (📅 2021 - 2023)
-    - 🏢 **Shop Employee** at [Outland](https://www.outland.no/) (📅 2018 - 2020)
-    
+st.write("🏢","**Teaching Assistant, TMP100 | NMBU **")
+st.write("📅 2022")
+st.write(
+    """
+    - ►
+    - ►
+    - ►
+    """)
+
+st.write("🏢","**Teaching Assistant, TIP100 | NMBU **")
+st.write("📅 2022-2023")
+st.write(
+    """
+    - ►
+    - ►
+    - ►
+    """)
+
+st.write("🏢","**Project Manager and Researcher | NMBU **")
+st.write("📅 2021 - 2023")
+st.write(
+    """
+    - ►
+    - ►
+    - ►
+    """)
+
+st.write("🏢","**Shop Employee | Outland **")
+st.write("📅 2018 - 2020")
+st.write(
+    """
+    - ►
+    - ►
+    - ►
+    """)
+
+st.write("""    
     - 🏆 **Twice winner of Young Entrepreneur Competition at High School** at [VVS](https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx) (📅 2024)
     """)
 
@@ -106,7 +147,6 @@ st.write(
     - 📏 **Simulation Software**: Simulink, Rviz
     - 📡 **Communication Protocols**: HTTP, WebSockets
     - 🛠️ **Prototyping**: 3D Printing, Laser Cutting, Soldering, General Machining Skills
-
     """
 )
 
@@ -116,3 +156,5 @@ st.subheader("Projects")
 st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"🔗 [{project}]({link})")
+
+st.image(gif_path, caption='Quadrocopter doing a barrel roll', use_column_width='always')
