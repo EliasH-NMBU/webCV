@@ -2,6 +2,7 @@ from pathlib import Path
 
 import streamlit as st
 from PIL import Image
+import itertools
 
 # ------ PATH Settings ------
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -29,13 +30,13 @@ SOCIAL_MEDIA = {
     "GitHub": "e",
     "IEEE": "https://ieeexplore.ieee.org/author/37086547200"}
 PROJECTS = {
-    "📚 Chain weight weighing station": "https://www.youtube.com/watch?v=BXAeMICmUSQ",
-    "📚 Self driving RC Car": "https://www.youtube.com/watch?v=BXAeMICmUSQ",
-    "📚 Model Boat Competition": "https://www.youtube.com/watch?v=BXAeMICmUSQ",
-    "📚 Labyrint Robot": "https://www.youtube.com/watch?v=BXAeMICmUSQ",
-    "📚 Matlab Drone Robot": "https://www.youtube.com/watch?v=BXAeMICmUSQ",
-    "📚 Thorvald Robot Running with Runtime Verification Platform": "https://www.youtube.com/watch?v=BXAeMICmUSQ",
-    "📚 Hovercraft Project": "https://www.youtube.com/watch?v=BXAeMICmUSQ",
+    "📚 Steel Chain Weighing/Pawn Station",
+    "📚 Self Driving RC Car, Machine Learning",
+    "📚 Model Boat Race and Report Competition",
+    "📚 Labyrint Robot",
+    "📚 Matlab Drone, Simulink",
+    "📚 Thorvald Robot Running with My Runtime Verification Platform",
+    "📚 Hovercraft Project",
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
@@ -151,21 +152,32 @@ st.write(
     """
 )
 
+with open(css_file) as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+st.markdown("""
+<style>
+img {
+    border-radius: 15px;  /* Rounded corners */
+    border: 2px solid #ccc;  /* Gray border */
+    max-width: 100%;        /* Ensure images are responsive */
+}
+</style>
+""", unsafe_allow_html=True)
 # ------ Projects ------
 st.write("#")
 st.subheader("Projects")
-st.write("---")
 
-# Iterate over each project and display it with a GIF and link in two columns
-for i, (project, link) in enumerate(PROJECTS.items(), start=1):
-    col1, col2 = st.columns(2)  # Divide into two columns
-    with col1:
-        # Load and display the GIF for the project
-        st.image(gif_path, caption=f"{project} GIF", use_column_width='always')
-    with col2:
-        # Display the link for the project
-        st.markdown(f"🔗 [{project}]({link})")
+project_list = list(PROJECTS)
+chunks = [project_list[i:i + 2] for i in range(0, len(project_list), 2)]
 
-    # Add a horizontal rule between each project (except for the last one)
-    if i < len(PROJECTS):
-        st.write("---")
+for chunk in chunks:
+    cols = st.columns(2)  # Create two columns
+    for i, project in enumerate(chunk):
+        with cols[i]:
+            # Adjust the width and format of the image directly
+            st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
+            st.markdown(f"🔗 [{project}](#)")
+
+    st.write("---")
