@@ -78,54 +78,57 @@ st.write(
     - 🎓 MSc in Applied Robotics, Autonomous Systems and Control (📅 2019 - 2024)
     - 🎓 High School Vestby Videregående Skole, Science Division (📅 2015 - 2018)
     """)
-st.write("🏢","**Robotics Engineer/Researcher | NMBU **")
-st.write("📅 05/2023 - Present")
-st.write(
-    """
-    - ►  
-    - ►
-    - ► 
-    """)
-
-st.write("🏢","**Teaching Assistant, TMP100 | NMBU **")
-st.write("📅 2022")
-st.write(
-    """
-    - ►
-    - ►
-    - ►
-    """)
-
-st.write("🏢","**Teaching Assistant, TIP100 | NMBU **")
-st.write("📅 2022-2023")
-st.write(
-    """
-    - ►
-    - ►
-    - ►
-    """)
-
-st.write("🏢","**Project Manager and Researcher | NMBU **")
-st.write("📅 2021 - 2023")
-st.write(
-    """
-    - ►
-    - ►
-    - ►
-    """)
-
-st.write("🏢","**Shop Employee | Outland **")
-st.write("📅 2018 - 2020")
-st.write(
-    """
-    - ►
-    - ►
-    - ►
-    """)
 
 st.write("""    
     - 🏆 **Twice winner of Young Entrepreneur Competition at High School** at [VVS](https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx) (📅 2024)
     """)
+
+st.markdown("🏢 **Robotics Engineer/Researcher | NMBU**", unsafe_allow_html=True)
+st.write("05/2023 - Present")
+st.write(
+    """
+    - ► Done in collaboration with Robofarmer, PhD candidate Mustafa Adam, Master candidate Tage Andersen and NMBU.
+    - ► Head researcher and developer of RV (runtime verification) platform, with the use of software developed by NASA (FRET & OGMA).
+    - ► Skills used: ROS2, Python, Javascript, Linux, CSS, Flask, FRET, OGMA, Formal Methods, Websockets, Temporal Logic.
+    """)
+
+st.markdown("🏢 **Teaching Assistant, TIP100 | NMBU**", unsafe_allow_html=True)
+st.write("01/2022 - 12/2023")
+st.write(
+    """
+    - ► TIP100 stands for Industrial Innovation and Technology, and is a course teached at NMBU.
+    - ► I was responsible for teaching the students how to use Peter Corkes robotics package for Matlab.
+    - ► Skills used: Matlab, Kinematics, Peter Corke Robotics Toolbox, Path Planning Algorythms.
+    """)
+
+st.markdown("🏢 **Project Manager and Researcher | Eik Lab, NMBU**", unsafe_allow_html=True)
+st.write("02/2021 - 10/2023")
+st.write(
+    """
+    - ► Eik Lab is a student driven lab at NMBU, where students can work on projects of their own choice. Here I engaged myself in multiple projects.
+    - ► Of the projects I was involved in, the most notable ones were a self drivable RC car, built with the use of machine learning and a Steel Chain weighing station for automotive vehicles.
+    - ► Skills used: Python, Machine Learning, Tensorflow, PyTorch, C++, Arduino, Raspberry Pi, JavaScript, SolidWorks, Fusion 360, 3D Printing, Laser Cutting, Soldering, General Machining Skills.
+    """)
+
+st.markdown("🏢 **Teaching Assistant, TMP100 | NMBU**", unsafe_allow_html=True)
+st.write("08/2022-12/2022")
+st.write(
+    """
+    - ► TMP stands for Mechanical Engineering and Process Technology. I was asked to teaching and planning this course for the students of 2022.
+    - ► My management of this course required me to have full control of the electrical wirering, acquisition of parts, and the teaching of CAD, 3d printing and laser cutting tools.
+    - ► Skills used: BOM list, CAD, 3D Printing, Laser Cutting, Soldering, General Machining Skills, Datasheet Reading.
+    """)
+
+st.markdown("🏢 **Shop Employee | Outland Oslo**", unsafe_allow_html=True)
+st.write("2018 - 2020")
+st.write(
+    """
+    - ► Outland is a shop that sells board games, card games, roleplaying games, and other related items.
+    - ► In this job I was entrusted with responsibility of a product group, and I was used as an expert on the topic of board games. My job was to help customers, control inventory, and to help with the weekly events that happened.
+    - ► Skills used: Customer Service, Inventory Control, Event Planning.
+    """)
+
+
 
 # ------ Skills ------
 st.write("#")
