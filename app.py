@@ -158,7 +158,7 @@ with open(css_file) as f:
 
 # ------ Projects ------
 st.write("#")
-st.subheader("Projects")
+st.subheader("Projects (WIP)")
 
 # Define the number of columns in the grid
 num_columns = 2
