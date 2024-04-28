@@ -26,4 +26,12 @@ hr {
 footer {visibility: hidden;}
 header {visibility: hidden;}
 
-
+img.profile-pic {
+    border: none;
+    border-radius: none;
+}
+img.project-gif {
+    border-radius: 15px;  /* Rounded corners */
+    border: 2px solid #ccc;  /* Gray border */
+    max-width: 100%;        /* Ensure images are responsive */
+}
