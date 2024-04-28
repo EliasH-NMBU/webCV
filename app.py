@@ -31,10 +31,10 @@ SOCIAL_MEDIA = {
     "GitHub": "e",
     "IEEE": "https://ieeexplore.ieee.org/author/37086547200"}
 PROJECTS = {
-    "📚 Steel Chain Weighing/Pawn Station": "assets/weight.gif",
-    "📚 Self Driving RC Car, Machine Learning": "assets/selfcar.gif",
-    "📚 Model Boat - Ocean Space Race": "assets/boatrace.gif",
     "📚 Labyrint Robot": "assets/robotimrt.gif",
+    "📚 Self Driving RC Car, Machine Learning": "assets/selfcar.gif",
+    "📚 Steel Chain Weighing/Pawn Station": "assets/weight.gif",
+    "📚 Model Boat - Ocean Space Race": "assets/boatrace.gif",
     "📚 Matlab Drone, Matlab Simulink": "assets/Barrel_roll.gif", 
     "📚 Thorvald Robot Running with My Runtime Verification Platform": "assets/hover.gif",  
     "📚 Hovercraft Project": "assets/hover.gif",
@@ -184,6 +184,7 @@ for row in range(num_rows):
                         border-radius: 15px;
                         border: 2px solid #ccc;
                         max-width: 100%;
+                        height: auto;
                     }
                     """
                 ):
