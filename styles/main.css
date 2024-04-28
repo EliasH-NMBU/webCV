@@ -35,3 +35,15 @@ img.project-gif {
     border: 2px solid #ccc;  /* Gray border */
     max-width: 100%;        /* Ensure images are responsive */
 }
+
+.project-gif-container {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    height: 250px !important;
+}
+
+.project-gif {
+    border-radius: 15px !important;
+    border: 2px solid #ccc !important;
+    max-width: 100% !important;
+}
