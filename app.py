@@ -3,6 +3,7 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 import itertools
+from streamlit_extras.stylable_container import stylable_container
 
 # ------ PATH Settings ------
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -167,13 +168,25 @@ num_columns = 2
 num_rows = -(-len(PROJECTS) // num_columns)  # Ceiling division
 
 # Iterate over the projects and display them in a grid
+
 for row in range(num_rows):
     cols = st.columns(num_columns)
     for col_index in range(num_columns):
         project_index = row * num_columns + col_index
         if project_index < len(PROJECTS):
             project, gif_path = list(PROJECTS.items())[project_index]
+            
             with cols[col_index]:
-                # Display the GIF using st.image
-                st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
+                with stylable_container(
+                    key = "gifs",
+                    css_styles="""
+                    div[data-testid="stImage"] > img {
+                        border-radius: 15px !important;
+                        border: 2px solid #ccc !important;
+                        max-width: 100% !important;
+                    }
+                    """
+                ):
+                    # Display the GIF using st.image
+                    st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
     st.write("---")
