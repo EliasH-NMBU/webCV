@@ -181,9 +181,9 @@ for row in range(num_rows):
                     key = "gifs",
                     css_styles="""
                     div[data-testid="stImage"] > img {
-                        border-radius: 15px !important;
-                        border: 2px solid #ccc !important;
-                        max-width: 100% !important;
+                        border-radius: 15px;
+                        border: 2px solid #ccc;
+                        max-width: 100%;
                     }
                     """
                 ):
