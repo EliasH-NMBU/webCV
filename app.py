@@ -176,5 +176,4 @@ for row in range(num_rows):
             with cols[col_index]:
                 # Display the GIF using st.image
                 st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
-                st.markdown(f"🔗 [{project}](#)")
     st.write("---")
