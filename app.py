@@ -10,7 +10,7 @@ css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV-3.pdf"
 grade_card = current_dir / "assets" / "grade_card.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
-gif_path = "assets/Barrel_roll.gif"
+
 
 
 
@@ -30,13 +30,13 @@ SOCIAL_MEDIA = {
     "GitHub": "e",
     "IEEE": "https://ieeexplore.ieee.org/author/37086547200"}
 PROJECTS = {
-    "📚 Steel Chain Weighing/Pawn Station",
-    "📚 Self Driving RC Car, Machine Learning",
-    "📚 Model Boat Race and Report Competition",
-    "📚 Labyrint Robot",
-    "📚 Matlab Drone, Simulink",
-    "📚 Thorvald Robot Running with My Runtime Verification Platform",
-    "📚 Hovercraft Project",
+    "📚 Steel Chain Weighing/Pawn Station": "assets/weight.gif",
+    "📚 Self Driving RC Car, Machine Learning": "assets/selfcar.gif",
+    "📚 Model Boat - Ocean Space Race": "assets/boatrace.gif",
+    "📚 Labyrint Robot": "assets/robotimrt.gif",
+    "📚 Matlab Drone, Matlab Simulink": "assets/Barrel_roll.gif", 
+    "📚 Thorvald Robot Running with My Runtime Verification Platform": "assets/hover.gif",  
+    "📚 Hovercraft Project": "assets/hover.gif",
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
@@ -52,11 +52,11 @@ with open(resume_file, "rb") as pdf_file:
 
 
 
-
 # ------ HERO section ------
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(str(profile_pic), width=230)
+    st.image(str(profile_pic), width=130, use_column_width=True, caption="Profile Picture")
+
 
 with col2:
     st.title(NAME)
@@ -156,28 +156,25 @@ with open(css_file) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-st.markdown("""
-<style>
-img {
-    border-radius: 15px;  /* Rounded corners */
-    border: 2px solid #ccc;  /* Gray border */
-    max-width: 100%;        /* Ensure images are responsive */
-}
-</style>
-""", unsafe_allow_html=True)
 # ------ Projects ------
 st.write("#")
 st.subheader("Projects")
 
-project_list = list(PROJECTS)
-chunks = [project_list[i:i + 2] for i in range(0, len(project_list), 2)]
+# Define the number of columns in the grid
+num_columns = 2
 
-for chunk in chunks:
-    cols = st.columns(2)  # Create two columns
-    for i, project in enumerate(chunk):
-        with cols[i]:
-            # Adjust the width and format of the image directly
-            st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
-            st.markdown(f"🔗 [{project}](#)")
+# Calculate the number of rows based on the number of projects and columns
+num_rows = -(-len(PROJECTS) // num_columns)  # Ceiling division
 
+# Iterate over the projects and display them in a grid
+for row in range(num_rows):
+    cols = st.columns(num_columns)
+    for col_index in range(num_columns):
+        project_index = row * num_columns + col_index
+        if project_index < len(PROJECTS):
+            project, gif_path = list(PROJECTS.items())[project_index]
+            with cols[col_index]:
+                # Display the GIF using st.image
+                st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
+                st.markdown(f"🔗 [{project}](#)")
     st.write("---")
