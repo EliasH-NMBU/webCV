@@ -179,15 +179,27 @@ for row in range(num_rows):
             with cols[col_index]:
                 with stylable_container(
                     key = "gifs",
-                    css_styles="""
-                    div[data-testid="stImage"] > img {
-                        border-radius: 15px;
-                        border: 2px solid #ccc;
-                        max-width: 100%;
-                        height: auto;
-                    }
-                    """
+                    css_styles=["""
+                        div[data-testid="stImage"] > img {
+                            border-radius: 15px;
+                            border: 2px solid #ccc;
+                            max-width: 100%;
+                            height: auto;
+                            position: relative;
+                            display: inline-block;
+                            transition: transform 0.5s ease;
+                            z-index: 1; 
+                        }
+                        """,
+                        """
+                        div[data-testid="stImage"] > img:hover {
+                            transform: scale(2.0);
+                            z-index: 2;
+                        }
+                        """,
+                    ]
                 ):
                     # Display the GIF using st.image
                     st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
     st.write("---")
+
