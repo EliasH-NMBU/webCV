@@ -82,11 +82,17 @@ st.write(
     """)
 
 st.write("""    
-    - 🏆 **Twice winner of Young Entrepreneur Competition at High School** at [VVS](https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx) (📅 2024)
+    - 🏆 **Twice winner of Young Entrepreneur Competition at High School** at [VVS](https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx) (📅 2015, 2018)
     """)
 
-st.markdown("🏢 **Robotics Engineer/Researcher | NMBU**", unsafe_allow_html=True)
-st.write("05/2023 - Present")
+st.write("<br>", unsafe_allow_html=True)
+
+st.markdown(
+    '<div style="text-align: center;">🏢 <b>Robotics Engineer/Researcher | NMBU</b></div>',
+    unsafe_allow_html=True
+)
+st.write('<div style="text-align: center;">05/2023 - Present</div>', unsafe_allow_html=True)
+
 st.write(
     """
     - ► Done in collaboration with Robofarmer, PhD candidate Mustafa Adam, Master candidate Tage Andersen and NMBU.
@@ -94,8 +100,14 @@ st.write(
     - ► Skills used: ROS2, Python, Javascript, Linux, CSS, Flask, FRET, OGMA, Formal Methods, Websockets, Temporal Logic.
     """)
 
-st.markdown("🏢 **Teaching Assistant, TIP100 | NMBU**", unsafe_allow_html=True)
-st.write("01/2022 - 12/2023")
+st.write("<br>", unsafe_allow_html=True)
+
+st.markdown(
+    '<div style="text-align: center;">🏢 <b>Teaching Assistant, TIP100 | NMBU</b></div>',
+    unsafe_allow_html=True
+)
+st.write('<div style="text-align: center;">01/2022 - 12/2023</div>', unsafe_allow_html=True)
+
 st.write(
     """
     - ► TIP100 stands for Industrial Innovation and Technology, and is a course teached at NMBU.
@@ -103,8 +115,14 @@ st.write(
     - ► Skills used: Matlab, Kinematics, Peter Corke Robotics Toolbox, Path Planning Algorythms.
     """)
 
-st.markdown("🏢 **Project Manager and Researcher | Eik Lab, NMBU**", unsafe_allow_html=True)
-st.write("02/2021 - 10/2023")
+st.write("<br>", unsafe_allow_html=True)
+
+st.markdown(
+    '<div style="text-align: center;">🏢 <b>Project Manager and Researcher | Eik Lab, NMBU</b></div>',
+    unsafe_allow_html=True
+)
+st.write('<div style="text-align: center;">02/2021 - 10/2023</div>', unsafe_allow_html=True)
+
 st.write(
     """
     - ► Eik Lab is a student driven lab at NMBU, where students can work on projects of their own choice. Here I engaged myself in multiple projects.
@@ -112,8 +130,14 @@ st.write(
     - ► Skills used: Python, Machine Learning, Tensorflow, PyTorch, C++, Arduino, Raspberry Pi, JavaScript, SolidWorks, Fusion 360, 3D Printing, Laser Cutting, Soldering, General Machining Skills.
     """)
 
-st.markdown("🏢 **Teaching Assistant, TMP100 | NMBU**", unsafe_allow_html=True)
-st.write("08/2022-12/2022")
+st.write("<br>", unsafe_allow_html=True)
+
+st.markdown(
+    '<div style="text-align: center;">🏢 <b>Teaching Assistant, TMP100 | NMBU</b></div>',
+    unsafe_allow_html=True
+)
+st.write('<div style="text-align: center;">08/2022-12/2022</div>', unsafe_allow_html=True)
+
 st.write(
     """
     - ► TMP stands for Mechanical Engineering and Process Technology. I was asked to teaching and planning this course for the students of 2022.
@@ -121,8 +145,13 @@ st.write(
     - ► Skills used: BOM list, CAD, 3D Printing, Laser Cutting, Soldering, General Machining Skills, Datasheet Reading.
     """)
 
-st.markdown("🏢 **Shop Employee | Outland Oslo**", unsafe_allow_html=True)
-st.write("2018 - 2020")
+st.write("<br>", unsafe_allow_html=True)
+
+st.markdown(
+    '<div style="text-align: center;">🏢 <b>Shop Employee | Outland Oslo</b></div>',
+    unsafe_allow_html=True
+)
+st.write('<div style="text-align: center;">2018 - 2020</div>', unsafe_allow_html=True)
 st.write(
     """
     - ► Outland is a shop that sells board games, card games, roleplaying games, and other related items.
@@ -130,6 +159,7 @@ st.write(
     - ► Skills used: Customer Service, Inventory Control, Event Planning.
     """)
 
+st.write("<br>", unsafe_allow_html=True)
 
 
 # ------ Skills ------
@@ -195,7 +225,12 @@ for row in range(num_rows):
                         div[data-testid="stImage"] > img:hover {
                             transform: scale(2.0);
                             z-index: 2;
+
                         }
+                        """,
+                        """
+                        button[title="View fullscreen"]{
+                        visibility: hidden;}
                         """,
                     ]
                 ):
