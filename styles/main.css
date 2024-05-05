@@ -47,3 +47,8 @@ img.project-gif {
     border: 2px solid #ccc !important;
     max-width: 100% !important;
 }
+
+.custom-text {
+    font-size: 28px !important;
+    font-family: Arial, sans-serif !important;
+}
