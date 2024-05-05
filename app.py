@@ -36,7 +36,6 @@ PROJECTS = {
     "📚 Steel Chain Weighing/Pawn Station": "assets/weight.gif",
     "📚 Model Boat - Ocean Space Race": "assets/boatrace.gif",
     "📚 Matlab Drone, Matlab Simulink": "assets/Barrel_roll.gif", 
-    "📚 Thorvald Robot Running with My Runtime Verification Platform": "assets/hover.gif",  
     "📚 Hovercraft Project": "assets/hover.gif",
 }
 
@@ -75,11 +74,19 @@ with col2:
 # ------ EXPERIENCE & QUALIFICATIONS ------
 st.write("#")
 st.subheader("Work Experience & Qualifications")
-st.write(
-    """
-    - 🎓 MSc in Applied Robotics, Autonomous Systems and Control (📅 2019 - 2024)
-    - 🎓 High School Vestby Videregående Skole, Science Division (📅 2015 - 2018)
-    """)
+
+with stylable_container(
+    key="education",
+    css_styles=["""
+        .stMarkdown{
+            font-size: 28px;
+            font-family: Arial, sans-serif;
+        }
+        """,
+    ]
+):
+    st.markdown("<p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p>", unsafe_allow_html=True)
+
 
 st.write("""    
     - 🏆 **Twice winner of Young Entrepreneur Competition at High School** at [VVS](https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx) (📅 2015, 2018)
@@ -229,6 +236,27 @@ for row in range(num_rows):
                         }
                         """,
                         """
+                            div[data-testid="stImage"] > .caption {
+                            visibility: hidden;
+                            position: absolute;
+                            background-color: rgba(0, 0, 0, 0.7);
+                            color: white;
+                            padding: 10px;
+                            border-radius: 5px;
+                            bottom: 10%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            transition: opacity 0.3s ease;
+                            z-index: 2;
+                        }
+                        """,
+                        """
+                            div[data-testid="stImage"]:hover > .caption {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                        """,
+                        """
                         button[title="View fullscreen"]{
                         visibility: hidden;}
                         """,
@@ -238,3 +266,8 @@ for row in range(num_rows):
                     st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
     st.write("---")
 
+
+video_file = open('assets/sequence1.mp4', 'rb')
+video_bytes = video_file.read()
+
+st.video(video_bytes, format="video/mp4", start_time=0, subtitles='assets/subtitles.vtt', end_time=None, loop=True)
