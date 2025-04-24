@@ -67,7 +67,7 @@ with open(resume_file, "rb") as pdf_file:
 # ------ HERO section ------
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(str(profile_pic), width=130, use_container_width=True, caption="Me")
+    st.image(str(profile_pic), width=130, use_column_width=True, caption="Me")
 
 
 with col2:
@@ -307,5 +307,5 @@ for row in range(num_rows):
                     ]
                 ):
                     # Display the GIF using st.image
-                    st.image(gif_path, caption=f"{project}", width=350, use_container_width=True)
+                    st.image(gif_path, caption=f"{project}", width=350, use_column_width=True)
     st.write("---")
