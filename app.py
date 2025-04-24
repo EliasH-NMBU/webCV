@@ -31,7 +31,7 @@ PROJECTS = {
     "📚 Model Boat - Ocean Space Race": "assets/boatrace.gif",
     "📚 Matlab Drone, Matlab Simulink": "assets/Barrel_roll.gif", 
     "📚 Hovercraft Project": "assets/hover.gif",
-    "📚 Runtime Verification Field Work": "assets/thorvald.gif",
+    "📚 Runtime Verification Field Work": "assets/throvaldshort.gif",
     "📚 Eyemech System": "assets/eyemech.gif",
 }
 
