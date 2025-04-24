@@ -5,30 +5,24 @@ from PIL import Image
 import itertools
 from streamlit_extras.stylable_container import stylable_container
 
+
 # ------ PATH Settings ------
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "CV-3.pdf"
+resume_file = current_dir / "assets" / "CV-6.pdf"
 grade_card = current_dir / "assets" / "grade_card.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
 
 
-
-
-
-
-
-
-
 # ------ General Settings ------
-PAGE_TITLE = "Portfolio"
-PAGE_ICON = "📚"
+PAGE_TITLE = "Elias E. Hartmark, MSc Robotocist and Fabricator"
+PAGE_ICON = href="assets/favicon.ico"
 NAME = "Elias Evjen Hartmark"
 DESCRIPTION = "Civil Engineer | Robotics & Cybernetics Engineer | Software & Machine Learning Engineer"
 EMAIL = "elias.hartmark@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/sourav-sahoo-1b8b3b1a4/",
-    "GitHub": "e",
+    "GitHub": "https://github.com/EliasH-NMBU",
     "IEEE": "https://ieeexplore.ieee.org/author/37086547200"}
 PROJECTS = {
     "📚 Labyrint Robot": "assets/robotimrt.gif",
@@ -37,11 +31,9 @@ PROJECTS = {
     "📚 Model Boat - Ocean Space Race": "assets/boatrace.gif",
     "📚 Matlab Drone, Matlab Simulink": "assets/Barrel_roll.gif", 
     "📚 Hovercraft Project": "assets/hover.gif",
+    "📚 Runtime Verification Field Work": "assets/thorvald.gif",
+    "📚 Eyemech System": "assets/eyemech.gif",
 }
-
-st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
-
-
 
 
 # ------ CSS Styling ------
@@ -55,7 +47,7 @@ with open(resume_file, "rb") as pdf_file:
 # ------ HERO section ------
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(str(profile_pic), width=130, use_column_width=True, caption="Profile Picture")
+    st.image(str(profile_pic), width=130, use_container_width=True, caption="Me")
 
 
 with col2:
@@ -196,7 +188,7 @@ with open(css_file) as f:
 
 # ------ Projects ------
 st.write("#")
-st.subheader("Projects (WIP)")
+st.subheader("Projects")
 
 # Define the number of columns in the grid
 num_columns = 2
@@ -215,7 +207,7 @@ for row in range(num_rows):
             
             with cols[col_index]:
                 with stylable_container(
-                    key = "gifs",
+                    key = f"gifs_{project_index}",
                     css_styles=["""
                         div[data-testid="stImage"] > img {
                             border-radius: 15px;
@@ -263,11 +255,5 @@ for row in range(num_rows):
                     ]
                 ):
                     # Display the GIF using st.image
-                    st.image(gif_path, caption=f"{project} GIF", width=350, use_column_width=True)
+                    st.image(gif_path, caption=f"{project}", width=350, use_container_width=True)
     st.write("---")
-
-
-video_file = open('assets/sequence1.mp4', 'rb')
-video_bytes = video_file.read()
-
-st.video(video_bytes, format="video/mp4", start_time=0, subtitles='assets/subtitles.vtt', end_time=None, loop=True)
