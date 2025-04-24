@@ -1,21 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500;600;700&display=swap');
 
+.main {
+    background-color: #f0f0f0; /* Light gray background */
+}
 
-html, body, [class*="css"] {
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+h1, .titlesection-header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #40b65f;
+}
+
+
+h2, .text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: #0fcd41;
+}
+
+.timeline {
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
-    font-weight: 500;
-    color: #091747;
-}
-
-education {
-    font-family: 'Orbitron', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    color: #40f409;
 }
 
 img {

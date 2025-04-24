@@ -5,6 +5,26 @@ from PIL import Image
 import itertools
 from streamlit_extras.stylable_container import stylable_container
 
+st.set_page_config(
+    page_title="Elias E. Hartmark, MSc Robotocist and Fabricator",
+    page_icon="assets/favicon.ico",
+)
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("assets/background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # ------ PATH Settings ------
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -16,7 +36,7 @@ profile_pic = current_dir / "assets" / "profile-pic.png"
 
 # ------ General Settings ------
 PAGE_TITLE = "Elias E. Hartmark, MSc Robotocist and Fabricator"
-PAGE_ICON = href="assets/favicon.ico"
+PAGE_ICON = "assets/favicon.ico"
 NAME = "Elias Evjen Hartmark"
 DESCRIPTION = "Civil Engineer | Robotics & Cybernetics Engineer | Software & Machine Learning Engineer"
 EMAIL = "elias.hartmark@gmail.com"
@@ -65,7 +85,7 @@ with col2:
 
 # ------ EXPERIENCE & QUALIFICATIONS ------
 st.write("#")
-st.subheader("Work Experience & Qualifications")
+st.markdown('<div class="titlesection-header"><div style="text-align: center;"><b>Work Experience & Qualifications</b></div></div>', unsafe_allow_html=True)
 
 with stylable_container(
     key="education",
@@ -73,91 +93,123 @@ with stylable_container(
         .stMarkdown{
             font-size: 28px;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         """,
     ]
 ):
+
     st.markdown("<p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p>", unsafe_allow_html=True)
 
 
-st.write("""    
-    - 🏆 **Twice winner of Young Entrepreneur Competition at High School** at [VVS](https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx) (📅 2015, 2018)
-    """)
-
+st.markdown(
+    '''
+    <div style="text-align: center;">
+        🏆 <strong>Twice winner of Young Entrepreneur Competition at High School</strong> at 
+        <a href="https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx" target="_blank">VVS</a> (📅 2015, 2018)
+    </div>
+    ''',
+    unsafe_allow_html=True
+)
 st.write("<br>", unsafe_allow_html=True)
 
 st.markdown(
-    '<div style="text-align: center;">🏢 <b>Robotics Engineer/Researcher | NMBU</b></div>',
+    '<div class="titlesection-header"><div style="text-align: center;"> <b>Robotics Engineer/Researcher | NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div style="text-align: center;">05/2023 - Present</div>', unsafe_allow_html=True)
-
-st.write(
+st.write('<div class="timeline"><div style="text-align: center;">05/2023 - Present</div></div>', unsafe_allow_html=True)
+st.markdown(
     """
-    - ► Done in collaboration with Robofarmer, PhD candidate Mustafa Adam, Master candidate Tage Andersen and NMBU.
-    - ► Head researcher and developer of RV (runtime verification) platform, with the use of software developed by NASA (FRET & OGMA).
-    - ► Skills used: ROS2, Python, Javascript, Linux, CSS, Flask, FRET, OGMA, Formal Methods, Websockets, Temporal Logic.
-    """)
-
+    <div class="text">
+        <ul>
+            <li> Done in collaboration with Robofarmer, PhD candidate Mustafa Adam, Master candidate Tage Andersen and NMBU.</li>
+            <li>► Head researcher and developer of RV (runtime verification) platform, with the use of software developed by NASA (FRET & OGMA).</li>
+            <li>► Skills used: ROS2, Python, Javascript, Linux, CSS, Flask, FRET, OGMA, Formal Methods, Websockets, Temporal Logic.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.write("<br>", unsafe_allow_html=True)
 
+
 st.markdown(
-    '<div style="text-align: center;">🏢 <b>Teaching Assistant, TIP100 | NMBU</b></div>',
+    '<div class="titlesection-header"><div style="text-align: center;"> <b>Teaching Assistant, TIP100 | NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div style="text-align: center;">01/2022 - 12/2023</div>', unsafe_allow_html=True)
-
-st.write(
+st.write('<div class="timeline"><div style="text-align: center;">01/2022 - 12/2023</div></div>', unsafe_allow_html=True)
+st.markdown(
     """
-    - ► TIP100 stands for Industrial Innovation and Technology, and is a course teached at NMBU.
-    - ► I was responsible for teaching the students how to use Peter Corkes robotics package for Matlab.
-    - ► Skills used: Matlab, Kinematics, Peter Corke Robotics Toolbox, Path Planning Algorythms.
-    """)
-
+    <div class="text">
+        <ul>
+            <li>► TIP100 stands for Industrial Innovation and Technology, and is a course teached at NMBU.</li>
+            <li>► I was responsible for teaching the students how to use Peter Corke’s robotics package for Matlab.</li>
+            <li>► Skills used: Matlab, Kinematics, Peter Corke Robotics Toolbox, Path Planning Algorithms.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.write("<br>", unsafe_allow_html=True)
 
+
 st.markdown(
-    '<div style="text-align: center;">🏢 <b>Project Manager and Researcher | Eik Lab, NMBU</b></div>',
+    '<div class="titlesection-header"><div style="text-align: center;"> <b>Project Manager and Researcher | Eik Lab, NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div style="text-align: center;">02/2021 - 10/2023</div>', unsafe_allow_html=True)
-
-st.write(
+st.write('<div class="timeline"><div style="text-align: center;">02/2021 - 10/2023</div></div>', unsafe_allow_html=True)
+st.markdown(
     """
-    - ► Eik Lab is a student driven lab at NMBU, where students can work on projects of their own choice. Here I engaged myself in multiple projects.
-    - ► Of the projects I was involved in, the most notable ones were a self drivable RC car, built with the use of machine learning and a Steel Chain weighing station for automotive vehicles.
-    - ► Skills used: Python, Machine Learning, Tensorflow, PyTorch, C++, Arduino, Raspberry Pi, JavaScript, SolidWorks, Fusion 360, 3D Printing, Laser Cutting, Soldering, General Machining Skills.
-    """)
-
+    <div class="text">
+        <ul>
+            <li>► Eik Lab is a student-driven lab at NMBU, where students can work on projects of their own choice. Here I engaged myself in multiple projects.</li>
+            <li>► The most notable projects I contributed to were a self-drivable RC car using machine learning and a Steel Chain weighing station for automotive vehicles.</li>
+            <li>► Skills used: Python, Machine Learning, TensorFlow, PyTorch, C++, Arduino, Raspberry Pi, JavaScript, SolidWorks, Fusion 360, 3D Printing, Laser Cutting, Soldering, General Machining Skills.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.write("<br>", unsafe_allow_html=True)
 
+
 st.markdown(
-    '<div style="text-align: center;">🏢 <b>Teaching Assistant, TMP100 | NMBU</b></div>',
+    '<div class="titlesection-header"><div style="text-align: center;"> <b>Teaching Assistant, TMP100 | NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div style="text-align: center;">08/2022-12/2022</div>', unsafe_allow_html=True)
-
-st.write(
+st.write('<div class="timeline"><div style="text-align: center;">08/2022-12/2022</div></div>', unsafe_allow_html=True)
+st.markdown(
     """
-    - ► TMP stands for Mechanical Engineering and Process Technology. I was asked to teaching and planning this course for the students of 2022.
-    - ► My management of this course required me to have full control of the electrical wirering, acquisition of parts, and the teaching of CAD, 3d printing and laser cutting tools.
-    - ► Skills used: BOM list, CAD, 3D Printing, Laser Cutting, Soldering, General Machining Skills, Datasheet Reading.
-    """)
-
+    <div class="text">
+        <ul>
+            <li>► TMP stands for Mechanical Engineering and Process Technology. I was responsible for teaching and planning this course in 2022.</li>
+            <li>► My role included managing electrical wiring, acquiring parts, and instructing on CAD, 3D printing, and laser cutting tools.</li>
+            <li>► Skills used: BOM list, CAD, 3D Printing, Laser Cutting, Soldering, General Machining Skills, Datasheet Reading.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.write("<br>", unsafe_allow_html=True)
 
+
 st.markdown(
-    '<div style="text-align: center;">🏢 <b>Shop Employee | Outland Oslo</b></div>',
+    '<div class="titlesection-header"><div style="text-align: center;"> <b>Shop Employee | Outland Oslo</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div style="text-align: center;">2018 - 2020</div>', unsafe_allow_html=True)
-st.write(
+st.write('<div class="timeline"><div style="text-align: center;">2018 - 2020</div></div>', unsafe_allow_html=True)
+st.markdown(
     """
-    - ► Outland is a shop that sells board games, card games, roleplaying games, and other related items.
-    - ► In this job I was entrusted with responsibility of a product group, and I was used as an expert on the topic of board games. My job was to help customers, control inventory, and to help with the weekly events that happened.
-    - ► Skills used: Customer Service, Inventory Control, Event Planning.
-    """)
-
+    <div class="text">
+        <ul>
+            <li>► Outland is a shop that sells board games, card games, roleplaying games, and other related items.</li>
+            <li>► In this job I was entrusted with responsibility of a product group, and I was used as an expert on the topic of board games. My job was to help customers, control inventory, and to help with the weekly events that happened.</li>
+            <li>► Skills used: Customer Service, Inventory Control, Event Planning.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.write("<br>", unsafe_allow_html=True)
 
 
