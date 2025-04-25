@@ -142,9 +142,9 @@ st.markdown(
     """
     <div class="text">
         <ul>
-            <li>► TIP100 stands for Industrial Innovation and Technology, and is a course teached at NMBU.</li>
-            <li>► I was responsible for teaching the students how to use Peter Corke’s robotics package for Matlab.</li>
-            <li>► Skills used: Matlab, Kinematics, Peter Corke Robotics Toolbox, Path Planning Algorithms.</li>
+            <li>>> TIP100 stands for Industrial Innovation and Technology, and is a course teached at NMBU.</li>
+            <li>>> I was responsible for teaching the students how to use Peter Corke’s robotics package for Matlab.</li>
+            <li>>> Skills used: Matlab, Kinematics, Peter Corke Robotics Toolbox, Path Planning Algorithms.</li>
         </ul>
     </div>
     """,
@@ -182,9 +182,9 @@ st.markdown(
     """
     <div class="text">
         <ul>
-            <li>► TMP stands for Mechanical Engineering and Process Technology. I was responsible for teaching and planning this course in 2022.</li>
-            <li>► My role included managing electrical wiring, acquiring parts, and instructing on CAD, 3D printing, and laser cutting tools.</li>
-            <li>► Skills used: BOM list, CAD, 3D Printing, Laser Cutting, Soldering, General Machining Skills, Datasheet Reading.</li>
+            <li>░ TMP stands for Mechanical Engineering and Process Technology. I was responsible for teaching and planning this course in 2022.</li>
+            <li>░ My role included managing electrical wiring, acquiring parts, and instructing on CAD, 3D printing, and laser cutting tools.</li>
+            <li>░ Skills used: BOM list, CAD, 3D Printing, Laser Cutting, Soldering, General Machining Skills, Datasheet Reading.</li>
         </ul>
     </div>
     """,
@@ -202,9 +202,9 @@ st.markdown(
     """
     <div class="text">
         <ul>
-            <li>► Outland is a shop that sells board games, card games, roleplaying games, and other related items.</li>
-            <li>► In this job I was entrusted with responsibility of a product group, and I was used as an expert on the topic of board games. My job was to help customers, control inventory, and to help with the weekly events that happened.</li>
-            <li>► Skills used: Customer Service, Inventory Control, Event Planning.</li>
+            <li>∷ Outland is a shop that sells board games, card games, roleplaying games, and other related items.</li>
+            <li>∷ In this job I was entrusted with responsibility of a product group, and I was used as an expert on the topic of board games. My job was to help customers, control inventory, and to help with the weekly events that happened.</li>
+            <li>∷ Skills used: Customer Service, Inventory Control, Event Planning.</li>
         </ul>
     </div>
     """,
@@ -274,7 +274,7 @@ for row in range(num_rows):
                         """,
                         """
                         div[data-testid="stImage"] > img:hover {
-                            transform: scale(2.0);
+                            transform: scale(1.25);
                             z-index: 2;
 
                         }
