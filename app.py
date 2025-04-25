@@ -111,7 +111,7 @@ st.markdown(
     '''
     <div class="text">
     <div style="text-align: center;">
-        🏆 <strong>Twice winner of Young Entrepreneur Competition at High School</strong> at 
+        🏆 Twice winner of Young Entrepreneur Competition at High School at 
         <a href="https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx" target="_blank">VVS</a> (📅 2015, 2018)
     </div>
     </div>
@@ -124,7 +124,31 @@ st.write("<br>", unsafe_allow_html=True)
 
 
 st.markdown(
-    '<div class="titlesection-header"><div style="text-align: center;"> <b> PhD, machine learning and data application | FHS/NMBU </b></div></div>',
+    '<div class="titlesection-header"><div style="text-align: center;"> <b> PhD | FHS/NMBU </b></div></div>',
+    unsafe_allow_html=True
+)
+st.write('<div class="timeline"><div style="text-align: center;">07/2025 - Present </div></div>', unsafe_allow_html=True)
+st.markdown(
+    """
+    <div class="text">
+        <ul>
+            <li>∷ PhD (Ongoing) </li>
+            <li>∷ MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024) </li>
+            <li>∷ High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</li>
+            <li>∷ Twice winner of Young Entrepreneur Competition at High School at 
+        <a href="https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx" target="_blank">VVS</a> (📅 2015, 2018) </li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.write("<br>", unsafe_allow_html=True)
+
+
+
+
+st.markdown(
+    '<div class="titlesection-header"><div style="text-align: center;"> <b> PhD | FHS/NMBU </b></div></div>',
     unsafe_allow_html=True
 )
 st.write('<div class="timeline"><div style="text-align: center;">07/2025 - Present </div></div>', unsafe_allow_html=True)
