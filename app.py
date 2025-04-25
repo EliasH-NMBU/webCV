@@ -87,20 +87,24 @@ with col2:
 st.write("#")
 st.markdown('<div class="titlesection-header"><div style="text-align: center;"><b>Work Experience & Qualifications</b></div></div>', unsafe_allow_html=True)
 
+
+
+
 with stylable_container(
     key="education",
     css_styles=["""
         .stMarkdown{
             class: "text";
-            font-size: 28px;
-            font-family: Arial, sans-serif;
+            font-size: 20px;
             text-align: center;
         }
         """,
     ]
 ):
 
-    st.markdown('<div class="text"> "<p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p>" </div>', unsafe_allow_html=True)
+    st.markdown('<div class="text"> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p> </div>', unsafe_allow_html=True)
+
+
 
 
 st.markdown(
@@ -115,6 +119,53 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("<br>", unsafe_allow_html=True)
+
+
+
+
+st.markdown(
+    '<div class="titlesection-header"><div style="text-align: center;"> <b> PhD, machine learning and data application | FHS/NMBU </b></div></div>',
+    unsafe_allow_html=True
+)
+st.write('<div class="timeline"><div style="text-align: center;">07/2025 - Present </div></div>', unsafe_allow_html=True)
+st.markdown(
+    """
+    <div class="text">
+        <ul>
+            <li>∷ PhD program, a collaboration between FHS Bergen and NMBU. </li>
+            <li>∷ Applied big data, artificial intelligence and machine learning for military maritime operations. </li>
+            <li>∷ Experience: Undergoing.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.write("<br>", unsafe_allow_html=True)
+
+
+
+
+st.markdown(
+    '<div class="titlesection-header"><div style="text-align: center;"> <b> Platform Software Engineer | Kongsberg Discovery</b></div></div>',
+    unsafe_allow_html=True
+)
+st.write('<div class="timeline"><div style="text-align: center;">10/2024 - 07/2025</div></div>', unsafe_allow_html=True)
+st.markdown(
+    """
+    <div class="text">
+        <ul>
+            <li>∷ Worked for Kongsberg Discovery on the uncrewed platform team.</li>
+            <li>∷ Researched integration of new sonar technology for the ENDURANCE and EDGE submarines.</li>
+            <li>∷ Experience: C++, Azure, test-cases, professional engineering and documentation.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.write("<br>", unsafe_allow_html=True)
+
+
+
 
 st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Robotics Engineer/Researcher | NMBU</b></div></div>',
