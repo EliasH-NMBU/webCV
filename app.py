@@ -102,46 +102,9 @@ with stylable_container(
     ]
 ):
 
-    st.markdown('<div class="text"> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p> </div>', unsafe_allow_html=True)
+    st.markdown('<div class="text"> <p><strong>🎓 PhD, artificial intelligence and machine learning </strong> (📅 2025 - Present)</p> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p> <p><strong>🏆 Twice winner of Young Entrepreneur Competition </strong> (📅 2015 - 2018)</p> </div>', unsafe_allow_html=True)
 
 
-
-
-st.markdown(
-    '''
-    <div class="text">
-    <div style="text-align: center;">
-        🏆 Twice winner of Young Entrepreneur Competition at High School at 
-        <a href="https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx" target="_blank">VVS</a> (📅 2015, 2018)
-    </div>
-    </div>
-    ''',
-    unsafe_allow_html=True
-)
-st.write("<br>", unsafe_allow_html=True)
-
-
-
-
-st.markdown(
-    '<div class="titlesection-header"><div style="text-align: center;"> <b> Work Experience & Qualifications </b></div></div>',
-    unsafe_allow_html=True
-)
-st.write('<div class="timeline"><div style="text-align: center;">07/2025 - Present </div></div>', unsafe_allow_html=True)
-st.markdown(
-    """
-    <div class="text">
-        <ul>
-            <li>∷ PhD (Ongoing) </li>
-            <li>∷ MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024) </li>
-            <li>∷ High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</li>
-            <li>∷ Twice winner of Young Entrepreneur Competition at High School at 
-        <a href="https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx" target="_blank">VVS</a> (📅 2015, 2018) </li>
-        </ul>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 st.write("<br>", unsafe_allow_html=True)
 
 
