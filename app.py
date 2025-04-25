@@ -91,6 +91,7 @@ with stylable_container(
     key="education",
     css_styles=["""
         .stMarkdown{
+            class: "text";
             font-size: 28px;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -104,9 +105,11 @@ with stylable_container(
 
 st.markdown(
     '''
+    <div class="text">
     <div style="text-align: center;">
         🏆 <strong>Twice winner of Young Entrepreneur Competition at High School</strong> at 
         <a href="https://afk.no/vestby-vgs/aktuelt/ungt-entreprenorskap.207574.aspx" target="_blank">VVS</a> (📅 2015, 2018)
+    </div>
     </div>
     ''',
     unsafe_allow_html=True
@@ -122,9 +125,9 @@ st.markdown(
     """
     <div class="text">
         <ul>
-            <li> Done in collaboration with Robofarmer, PhD candidate Mustafa Adam, Master candidate Tage Andersen and NMBU.</li>
-            <li>► Head researcher and developer of RV (runtime verification) platform, with the use of software developed by NASA (FRET & OGMA).</li>
-            <li>► Skills used: ROS2, Python, Javascript, Linux, CSS, Flask, FRET, OGMA, Formal Methods, Websockets, Temporal Logic.</li>
+            <li>∷ Done in collaboration with Robofarmer, PhD candidate Mustafa Adam, Master candidate Tage Andersen and NMBU.</li>
+            <li>∷ Head researcher and developer of RV (runtime verification) platform, with the use of software developed by NASA (FRET & OGMA).</li>
+            <li>∷ Skills used: ROS2, Python, Javascript, Linux, CSS, Flask, FRET, OGMA, Formal Methods, Websockets, Temporal Logic.</li>
         </ul>
     </div>
     """,
@@ -142,9 +145,9 @@ st.markdown(
     """
     <div class="text">
         <ul>
-            <li>>> TIP100 stands for Industrial Innovation and Technology, and is a course teached at NMBU.</li>
-            <li>>> I was responsible for teaching the students how to use Peter Corke’s robotics package for Matlab.</li>
-            <li>>> Skills used: Matlab, Kinematics, Peter Corke Robotics Toolbox, Path Planning Algorithms.</li>
+            <li>∷ TIP100 stands for Industrial Innovation and Technology, and is a course teached at NMBU.</li>
+            <li>∷ I was responsible for teaching the students how to use Peter Corke’s robotics package for Matlab.</li>
+            <li>∷ Skills used: Matlab, Kinematics, Peter Corke Robotics Toolbox, Path Planning Algorithms.</li>
         </ul>
     </div>
     """,
@@ -162,9 +165,9 @@ st.markdown(
     """
     <div class="text">
         <ul>
-            <li>► Eik Lab is a student-driven lab at NMBU, where students can work on projects of their own choice. Here I engaged myself in multiple projects.</li>
-            <li>► The most notable projects I contributed to were a self-drivable RC car using machine learning and a Steel Chain weighing station for automotive vehicles.</li>
-            <li>► Skills used: Python, Machine Learning, TensorFlow, PyTorch, C++, Arduino, Raspberry Pi, JavaScript, SolidWorks, Fusion 360, 3D Printing, Laser Cutting, Soldering, General Machining Skills.</li>
+            <li>∷ Eik Lab is a student-driven lab at NMBU, where students can work on projects of their own choice. Here I engaged myself in multiple projects.</li>
+            <li>∷ The most notable projects I contributed to were a self-drivable RC car using machine learning and a Steel Chain weighing station for automotive vehicles.</li>
+            <li>∷ Skills used: Python, Machine Learning, TensorFlow, PyTorch, C++, Arduino, Raspberry Pi, JavaScript, SolidWorks, Fusion 360, 3D Printing, Laser Cutting, Soldering, General Machining Skills.</li>
         </ul>
     </div>
     """,
@@ -182,9 +185,9 @@ st.markdown(
     """
     <div class="text">
         <ul>
-            <li>░ TMP stands for Mechanical Engineering and Process Technology. I was responsible for teaching and planning this course in 2022.</li>
-            <li>░ My role included managing electrical wiring, acquiring parts, and instructing on CAD, 3D printing, and laser cutting tools.</li>
-            <li>░ Skills used: BOM list, CAD, 3D Printing, Laser Cutting, Soldering, General Machining Skills, Datasheet Reading.</li>
+            <li>∷ TMP stands for Mechanical Engineering and Process Technology. I was responsible for teaching and planning this course in 2022.</li>
+            <li>∷ My role included managing electrical wiring, acquiring parts, and instructing on CAD, 3D printing, and laser cutting tools.</li>
+            <li>∷ Skills used: BOM list, CAD, 3D Printing, Laser Cutting, Soldering, General Machining Skills, Datasheet Reading.</li>
         </ul>
     </div>
     """,
