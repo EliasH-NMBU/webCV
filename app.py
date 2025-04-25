@@ -124,7 +124,7 @@ st.write("<br>", unsafe_allow_html=True)
 
 
 st.markdown(
-    '<div class="titlesection-header"><div style="text-align: center;"> <b> PhD | FHS/NMBU </b></div></div>',
+    '<div class="titlesection-header"><div style="text-align: center;"> <b> Work Experience & Qualifications </b></div></div>',
     unsafe_allow_html=True
 )
 st.write('<div class="timeline"><div style="text-align: center;">07/2025 - Present </div></div>', unsafe_allow_html=True)
@@ -215,7 +215,7 @@ st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Teaching Assistant, TIP100 | NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div class="glitch"><div style="text-align: center;">01/2022 - 12/2023</div></div>', unsafe_allow_html=True)
+st.write('<div class="glitch" data-text="01/2022 - 12/2023"><div style="text-align: center;">01/2022 - 12/2023</div></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="text">
