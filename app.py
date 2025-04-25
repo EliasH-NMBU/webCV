@@ -66,8 +66,28 @@ with open(resume_file, "rb") as pdf_file:
 
 # ------ HERO section ------
 col1, col2 = st.columns(2, gap="small")
+
+# Load custom font
+st.markdown("""
+    <style>
+    @font-face {
+        font-family: 'Theban';
+        src: url('webCV/styles/theban2.ttf') format('truetype');
+    }
+    .text-theban {
+        font-family: 'Theban', sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Display image and styled caption
 with col1:
-    st.image(str(profile_pic), width=130, use_column_width=True, caption="Me")
+    st.image(profile_pic, width=130, use_column_width=True)
+    st.markdown('<p class="text-theban">Hello there!</p>', unsafe_allow_html=True)
+
+
 
 
 with col2:
@@ -102,7 +122,7 @@ with stylable_container(
     ]
 ):
 
-    st.markdown('<div class="text"> <p><strong>🎓 PhD, artificial intelligence and machine learning </strong> (📅 2025 - Present)</p> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p> <p><strong>🏆 Twice winner of Young Entrepreneur Competition </strong> (📅 2015 - 2018)</p> </div>', unsafe_allow_html=True)
+    st.markdown('<div class="text-theban"> <p><strong>🎓 PhD, artificial intelligence and machine learning </strong> (📅 2025 - Present)</p> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p> <p><strong>🏆 Twice winner of Young Entrepreneur Competition </strong> (📅 2015 - 2018)</p> </div>', unsafe_allow_html=True)
 
 
 st.write("<br>", unsafe_allow_html=True)
