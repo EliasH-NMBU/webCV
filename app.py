@@ -174,6 +174,8 @@ st.markdown(
 st.write("<br>", unsafe_allow_html=True)
 
 
+
+
 st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Teaching Assistant, TIP100 | NMBU</b></div></div>',
     unsafe_allow_html=True
@@ -192,6 +194,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("<br>", unsafe_allow_html=True)
+
+
 
 
 st.markdown(
@@ -214,6 +218,8 @@ st.markdown(
 st.write("<br>", unsafe_allow_html=True)
 
 
+
+
 st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Teaching Assistant, TMP100 | NMBU</b></div></div>',
     unsafe_allow_html=True
@@ -234,6 +240,8 @@ st.markdown(
 st.write("<br>", unsafe_allow_html=True)
 
 
+
+
 st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Shop Employee | Outland Oslo</b></div></div>',
     unsafe_allow_html=True
@@ -252,6 +260,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("<br>", unsafe_allow_html=True)
+
+
 
 
 # ------ Skills ------
@@ -277,6 +287,8 @@ st.write(
 
 with open(css_file) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
 
 
 # ------ Projects ------
