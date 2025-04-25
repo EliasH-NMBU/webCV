@@ -100,7 +100,7 @@ with stylable_container(
     ]
 ):
 
-    st.markdown("<p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p>", unsafe_allow_html=True)
+    st.markdown('<div class="text"> "<p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p>" </div>', unsafe_allow_html=True)
 
 
 st.markdown(
@@ -140,7 +140,7 @@ st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Teaching Assistant, TIP100 | NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div class="timeline"><div style="text-align: center;">01/2022 - 12/2023</div></div>', unsafe_allow_html=True)
+st.write('<div class="glitch"><div style="text-align: center;">01/2022 - 12/2023</div></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="text">

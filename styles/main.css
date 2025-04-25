@@ -88,3 +88,56 @@ img.project-gif {
     font-size: 28px !important;
     font-family: 'Orbitron', sans-serif !important;
 }
+
+.glitch {
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    position: relative;
+  }
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #f0f;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+    animation: glitchTop 1s infinite linear alternate-reverse;
+  }
+  
+.glitch::after {
+    animation: glitchBottom 1s infinite linear alternate-reverse;
+  }
+  
+@keyframes glitchTop {
+    0% {
+      clip: rect(0, 9999px, 0, 0);
+    }
+    5% {
+      clip: rect(0, 9999px, 5px, 0);
+      transform: translate(-2px, -2px);
+    }
+    100% {
+      clip: rect(0, 9999px, 0, 0);
+    }
+  }
+  
+@keyframes glitchBottom {
+    0% {
+      clip: rect(0, 9999px, 0, 0);
+    }
+    5% {
+      clip: rect(10px, 9999px, 15px, 0);
+      transform: translate(2px, 2px);
+    }
+    100% {
+      clip: rect(0, 9999px, 0, 0);
+    }
+  }
