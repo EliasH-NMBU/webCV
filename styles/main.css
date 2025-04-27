@@ -2,20 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500;600;700&display=swap');
 @font-face {
     font-family: 'Theban';
-    src: url('theban.ttf') format('truetype');
-  }
-  
+    src: url('/webCV/styles/theban.ttf') format('truetype');
+}
 
 .text-theban {
     font-family: 'Theban', sans-serif;
-  }
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;  /* Explicitly set font-weight */
+    font-style: normal;   /* Explicitly set font-style */
+}
 
 .main {
     background-color: #000000; 
-}
-
-body {
-    font-family: 'Orbitron', sans-serif;
 }
 
 
