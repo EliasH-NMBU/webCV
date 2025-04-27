@@ -5,10 +5,12 @@ from PIL import Image
 import itertools
 from streamlit_extras.stylable_container import stylable_container
 
+
 st.set_page_config(
     page_title="Elias E. Hartmark, MSc Robotocist and Fabricator",
     page_icon="assets/favicon.ico",
 )
+st.markdown('<link rel="preload" href="ThebanAlphabet.woff2" as="font" type="font/woff2" crossorigin>')
 
 st.markdown(
     """
@@ -72,7 +74,7 @@ st.markdown("""
     <style>
     @font-face {
         font-family: 'Theban';
-        src: url('webCV/styles/theban2.ttf') format('truetype');
+        src: url('/webCV/styles/ThebanAlphabet.ttf') format('truetype');
     }
     .text-theban {
         font-family: 'Theban', sans-serif;

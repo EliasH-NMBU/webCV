@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Theban Alphabet';
+    src: url('ThebanAlphabet.woff2') format('woff2'),
+        url('ThebanAlphabet.woff') format('woff'),
+        url('ThebanAlphabet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

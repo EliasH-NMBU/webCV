@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500;600;700&display=swap');
 @font-face {
     font-family: 'Theban';
-    src: url('/webCV/styles/theban.ttf') format('truetype');
+    src: url('/webCV/styles/ThebanAlphabet.woff2') format('woff2');
 }
+
+.your-style {
+    font-family: 'Theban';
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 .text-theban {
     font-family: 'Theban', sans-serif;
