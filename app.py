@@ -137,7 +137,7 @@ with stylable_container(
     ]
 ):
 
-    st.markdown('<div class="text"> <p><strong>🎓 PhD, artificial intelligence and machine learning </strong> (📅 2025 - Present)</p> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (📅 2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (📅 2015 - 2018)</p> <p><strong>🏆 Twice winner of Young Entrepreneur Competition </strong> (📅 2015 - 2018)</p> </div>', unsafe_allow_html=True)
+    st.markdown('<div class="text"> <p><strong>🎓 PhD, artificial intelligence and machine learning </strong> (2025 - Present)</p> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (2015 - 2018)</p> <p><strong>🏆 Twice winner of Young Entrepreneur Competition </strong> (📅 2015 - 2018)</p> </div>', unsafe_allow_html=True)
 
 
 st.write("<br>", unsafe_allow_html=True)
@@ -149,7 +149,7 @@ st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b> PhD | FHS/NMBU </b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div class="timeline"><div style="text-align: center;">07/2025 - Present </div></div>', unsafe_allow_html=True)
+st.write('<div class="glitch" data-text="07/2025 - Present"><div style="text-align: center;">07/2025 - Present </div></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="text">
@@ -171,7 +171,7 @@ st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b> Platform Software Engineer | Kongsberg Discovery</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div class="timeline"><div style="text-align: center;">10/2024 - 07/2025</div></div>', unsafe_allow_html=True)
+st.write('<div class="glitch" data-text="10/2024 - 07/2025"><div style="text-align: center;">10/2024 - 07/2025</div></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="text">
@@ -193,7 +193,7 @@ st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Robotics Engineer/Researcher | NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div class="timeline"><div style="text-align: center;">05/2023 - Present</div></div>', unsafe_allow_html=True)
+st.write('<div class="glitch" data-text="05/2023 - 01/2024"><div style="text-align: center;">05/2023 - 01/2024</div></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="text">
@@ -237,7 +237,7 @@ st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Project Manager and Researcher | Eik Lab, NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div class="timeline"><div style="text-align: center;">02/2021 - 10/2023</div></div>', unsafe_allow_html=True)
+st.write('<div class="glitch" data-text="02/2021 - 10/2023"><div style="text-align: center;">02/2021 - 10/2023</div></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="text">
@@ -259,7 +259,7 @@ st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Teaching Assistant, TMP100 | NMBU</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div class="timeline"><div style="text-align: center;">08/2022-12/2022</div></div>', unsafe_allow_html=True)
+st.write('<div class="glitch" data-text="08/2022 - 12/2022"><div style="text-align: center;">08/2022 - 12/2022</div></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="text">
@@ -281,7 +281,7 @@ st.markdown(
     '<div class="titlesection-header"><div style="text-align: center;"> <b>Shop Employee | Outland Oslo</b></div></div>',
     unsafe_allow_html=True
 )
-st.write('<div class="timeline"><div style="text-align: center;">2018 - 2020</div></div>', unsafe_allow_html=True)
+st.write('<div class="glitch" data-text="2018 - 2020"><div style="text-align: center;">2018 - 2020</div></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="text">

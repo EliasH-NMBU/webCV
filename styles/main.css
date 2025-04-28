@@ -105,9 +105,9 @@ img.project-gif {
 }
 
 .glitch {
-    color: #0ff;
+    color: rgb(52, 238, 35);
     font-family: 'Orbitron', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
   }
 
@@ -119,8 +119,9 @@ img.project-gif {
   top: 0;
   width: 100%;
   overflow: hidden;
-  color: #f0f;
+  color: rgb(9, 135, 60);
   clip: rect(0, 900px, 0, 0);
+  text-align: center;
 }
 
 .glitch::before {
