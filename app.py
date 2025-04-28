@@ -137,7 +137,7 @@ with stylable_container(
     ]
 ):
 
-    st.markdown('<div class="text"> <p><strong>🎓 PhD, artificial intelligence and machine learning </strong> (2025 - Present)</p> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (2015 - 2018)</p> <p><strong>🏆 Twice winner of Young Entrepreneur Competition </strong> (📅 2015 - 2018)</p> </div>', unsafe_allow_html=True)
+    st.markdown('<div class="text"> <p><strong>🎓 PhD, artificial intelligence and machine learning </strong> (2025 - Present)</p> <p><strong>🎓 MSc in Applied Robotics, Autonomous Systems and Control</strong> (2019 - 2024)</p> <p><strong>🎓 High School Vestby Videregående Skole, Science Division</strong> (2015 - 2018)</p> <p><strong>🏆 Twice winner of Young Entrepreneur Competition </strong> (2015 - 2018)</p> </div>', unsafe_allow_html=True)
 
 
 st.write("<br>", unsafe_allow_html=True)
