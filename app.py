@@ -4,13 +4,40 @@ import streamlit as st
 from PIL import Image
 import itertools
 from streamlit_extras.stylable_container import stylable_container
+import base64
 
+with open("styles/ThebanAlphabet.ttf", "rb") as f:
+    ttf_bytes = f.read()
+    encoded = base64.b64encode(ttf_bytes).decode()
 
 st.set_page_config(
     page_title="Elias E. Hartmark, MSc Robotocist and Fabricator",
     page_icon="assets/favicon.ico",
 )
-st.markdown('<link rel="preload" href="ThebanAlphabet.woff2" as="font" type="font/woff2" crossorigin>')
+st.markdown(
+    '<link rel="preload" href="ThebanAlphabet.woff2" as="font" type="font/woff2" crossorigin>',
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    f"""
+    <style>
+    @font-face {{
+        font-family: 'ThebanAlphabet';
+        src: url(data:font/ttf;base64,{encoded}) format('truetype');
+    }}
+    .weird-font {{
+        font-family: 'ThebanAlphabet';
+        font-size: 32px;
+        /* Cyber Green, centered */
+        color: #00FF00;
+        text-align: center;
+        
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown(
     """
@@ -69,25 +96,11 @@ with open(resume_file, "rb") as pdf_file:
 # ------ HERO section ------
 col1, col2 = st.columns(2, gap="small")
 
-# Load custom font
-st.markdown("""
-    <style>
-    @font-face {
-        font-family: 'Theban';
-        src: url('/webCV/styles/ThebanAlphabet.ttf') format('truetype');
-    }
-    .text-theban {
-        font-family: 'Theban', sans-serif;
-        font-size: 16px;
-        text-align: center;
-    }
-    </style>
-""", unsafe_allow_html=True)
 
 # Display image and styled caption
 with col1:
     st.image(Image.open(profile_pic), width=130, use_column_width=True)
-    st.markdown('<p class="text-theban">Hello there!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="weird-font">Hello there!</p>', unsafe_allow_html=True)
 
 
 
